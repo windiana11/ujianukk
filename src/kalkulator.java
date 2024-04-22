@@ -52,6 +52,7 @@ public class kalkulator extends javax.swing.JFrame {
         titik = new javax.swing.JButton();
         kosong = new javax.swing.JButton();
         sama = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         jButton2.setText("jButton2");
 
@@ -200,6 +201,8 @@ public class kalkulator extends javax.swing.JFrame {
             }
         });
 
+        jLabel2.setText("BY windy");
+
         javax.swing.GroupLayout hapusLayout = new javax.swing.GroupLayout(hapus);
         hapus.setLayout(hapusLayout);
         hapusLayout.setHorizontalGroup(
@@ -209,7 +212,7 @@ public class kalkulator extends javax.swing.JFrame {
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(52, 52, 52))
             .addGroup(hapusLayout.createSequentialGroup()
-                .addGroup(hapusLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(hapusLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(hapusLayout.createSequentialGroup()
                         .addGap(35, 35, 35)
                         .addGroup(hapusLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -248,11 +251,12 @@ public class kalkulator extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(enam, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(tujuh, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(2, 2, 2))))
+                                        .addComponent(tujuh, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                     .addGroup(hapusLayout.createSequentialGroup()
                         .addGap(139, 139, 139)
-                        .addComponent(sama, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(sama, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel2)))
                 .addContainerGap(43, Short.MAX_VALUE))
         );
         hapusLayout.setVerticalGroup(
@@ -291,7 +295,9 @@ public class kalkulator extends javax.swing.JFrame {
                         .addComponent(kosong, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(titik, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
-                .addComponent(sama, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(hapusLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(sama, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -359,7 +365,7 @@ public class kalkulator extends javax.swing.JFrame {
     }//GEN-LAST:event_sembilanActionPerformed
 
     private void samaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_samaActionPerformed
-        // TODO add your handling code here:
+.        // TODO add your handling code here:
         switch(pilih){
             case 1:
                 bil2 = Double.parseDouble( String.valueOf(hasil.getText()));
@@ -491,6 +497,7 @@ public class kalkulator extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JButton kali;
     private javax.swing.JButton kosong;
     private javax.swing.JButton kurang;
